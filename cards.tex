@@ -1,0 +1,35 @@
+% !TEX TS-program = xelatex
+\documentclass[a4paper,9pt,oneside]{memoir}
+\usepackage{fontspec}
+\usepackage[newdimens]{labels}
+\LabelCols=2%
+\LabelRows=5%
+\LeftPageMargin=13.0mm%
+\RightPageMargin=8.0mm%
+\TopPageMargin=16.5mm%
+\BottomPageMargin=16.5mm%
+\InterLabelColumn=1.5mm%
+\InterLabelRow=5.0mm%
+\LeftLabelBorder=6mm%
+\RightLabelBorder=6mm%
+\TopLabelBorder=7mm%
+\BottomLabelBorder=6mm%
+\numberoflabels=50%
+\LabelGridtrue%  <-- or
+%\LabelGridfalse
+\newcommand{\phone}{203.376.9329}
+\newcommand{\email}{russ@shomberg.org}
+\newcommand{\address}{http://shomberg.org/work}
+%
+\begin{document}
+\addresslabel[\fboxsep=5mm]{%
+  \Huge Russell J Shomberg \\
+  \Large \textit{Mechanical Engineer} | \textit{Project Manager}\\
+  \vspace*{\fill}
+  \flushright{
+    \normalsize
+    \address \\
+    \email \\
+    \phone}
+}
+\end{document}
